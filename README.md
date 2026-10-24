@@ -9,11 +9,14 @@ teaching modules.
 🔗 **Live app:** https://srrweb.cc.lehigh.edu/app/lab_bayesian_optimization
 
 ## My role
-I built the user interface (`General_Frontend.py`, `bayesian_optimization.html`):
-- Forms for parameter names, ranges and the objective (maximize or minimize)
-- Manual data entry or CSV upload of past trials
-- "Suggest Next Experiment" → "Submit Result & Update Model" loop
-- Live results table and plots
+- **Built the web page** (`bayesian_optimization.html`): the layout, styling and
+  tabbed teaching content that explains Bayesian optimization, surrogate models
+  (Gaussian process, random forest, extra trees), acquisition functions (EI, LCB,
+  GP Hedge) and sampling methods (random, Sobol, Latin hypercube), plus
+  step-by-step instructions and guiding questions for students.
+- **Tested the optimization model on real experimental data** to check that its
+  suggestions made sense before release.
+
 
 ## How it works
 The app uses scikit-optimize to fit a surrogate model (Gaussian process,
